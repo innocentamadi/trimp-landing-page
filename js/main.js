@@ -68,6 +68,15 @@
     /*---------------------------
     MICHIMP INTEGRATION
     -----------------------------*/
+  $('#login-form').ajaxChimp({
+    url: 'https://gmail.us5.list-manage.com/subscribe/post?u=ff57b6f1a8e4fea99c5a37fca&amp;id=8889052dda', //Set Your Mailchamp URL
+    callback: function (resp) {
+      if (resp.result === 'success') {
+        $('.subscrie-form, .join-button').fadeOut();
+        $('body').css('overflow-y', 'scroll');
+      }
+    }
+  });
   $('#mc-form2').ajaxChimp({
     url: 'https://gmail.us5.list-manage.com/subscribe/post?u=ff57b6f1a8e4fea99c5a37fca&amp;id=8889052dda', //Set Your Mailchamp URL
     callback: function (resp) {

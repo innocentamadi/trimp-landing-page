@@ -83,7 +83,12 @@
                         <p>If you want a personal tailor who thinks about what's best for you, infuses your style in every decision while taking off all the stress in a process you can trust, try Trimp</p>
                     </div>
                     <div class="space-20"></div>
-                    <a href="https://forms.gle/fQ2WFtGiAC3xELRv8" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-bubble"></i>Get Started</a>
+                    <a href="#" data-toggle="modal" data-target="#loginModal" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-bubble"></i>Get Started</a>
+
+                    <!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
+                    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">-->
+                        <!--Launch demo modal-->
+                    <!--</button>-->
                 </div>
             </div>
         </div>
@@ -125,7 +130,7 @@
                             <p>From the moment you select a style to the moment your clothes get delivered, we keep you updated as much as you would like every step of the way.</p>
                         </div>
                         <div class="space-50"></div>
-                        <a href="https://forms.gle/fQ2WFtGiAC3xELRv8" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
+                        <a href="#" data-toggle="modal" data-target="#loginModal" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
@@ -159,7 +164,7 @@
                             <p>Our most important success metric is the size of the smile on your face as you admire yourself in a mirror wearing your freshly delivered dream clothes.</p>
                         </div>
                         <div class="space-50"></div>
-                        <a href="https://forms.gle/fQ2WFtGiAC3xELRv8" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
+                        <a href="#" data-toggle="modal" data-target="#loginModal" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -343,7 +348,7 @@
                         <p>From style selection, saving up for your dress, agreeing with your fashion designer, acknowledging delivery, do everything from your phone.</p>
                     </div>
                     <div class="space-50"></div>
-                    <a href="https://forms.gle/fQ2WFtGiAC3xELRv8" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
+                    <a href="#" data-toggle="modal" data-target="#loginModal" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
                 </div>
             </div>
         </div>
@@ -641,6 +646,42 @@
             </div>
         </div>
         <!-- Footer-Bootom-End -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form id="login-form" class="login-form">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="loginModalLabel">Sign Up Form</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label class="pull-left" for="mc_first_name">First Name</label>
+                                <input type="text" class="form-control" id="mc_first_name" name="FNAME" placeholder="Enter First Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="pull-left" for="mc_last_name">Last Name</label>
+                                <input type="text" class="form-control" id="mc_last_name" name="LNAME" placeholder="Enter Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="pull-left" for="mc_email">Email address</label>
+                                <input type="email" class="form-control" id="mc_email" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted pull-left">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="t_and_c">
+                                <label class="form-check-label" for="t_and_c">I agree to the terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bttn-white" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn bttn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </footer>
     <!-- Footer-Area-End -->
     <!--Vendor-JS-->
