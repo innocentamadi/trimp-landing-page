@@ -1345,3 +1345,14 @@ input:-webkit-autofill:focus {
 .form-double .box.last {
     float: right;
 }
+
+.login-form .form-check {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 6rem;
+}
+
+.login-form .form-check label {
+    margin-left: 10px;
+}

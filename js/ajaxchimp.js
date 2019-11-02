@@ -103,7 +103,17 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                     ) {
                         msg = $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]];
                     }
-                    label.html(msg);
+
+                    if(form.hasClass('login-form')) {
+                      $('#loginModalLabel').html(msg);
+                      setTimeout(() => {
+                        label.html('Email')
+                        $('#loginModalLabel').html('Sign Up Form');
+                        $('#loginModal').modal('hide')
+                      }, 2000)
+                    } else {
+                      label.html(msg);
+                    }
 
                     label.show(2000);
                     if (settings.callback) {
